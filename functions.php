@@ -81,6 +81,19 @@ function _tk_widgets_init() {
 		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h3>',
 	) );
+
+        $args = array(
+		'id'            => 'footer',
+		'class'         => 'footer_sidebar',
+		'name'          => __( 'Footer', 'sln' ),
+                'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+                'after_widget'  => '</aside>',
+                'before_title'  => '<h3 class="widget-title">',
+                'after_title'   => '</h3>',
+
+	);
+	register_sidebar( $args );
+
 }
 add_action( 'widgets_init', '_tk_widgets_init' );
 
