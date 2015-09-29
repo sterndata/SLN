@@ -43,6 +43,8 @@ Credits:
 /* This is a small security for too long strings titles */
 body {
 	word-wrap: break-word;
+        font-family: 'PT Sans',arial,sans-serif;
+        font-size: 16px;
 }
 
 /* Alignment */
@@ -256,3 +258,22 @@ display: block;
 */
 
 /* Hey, if you don't need my comments anymore, just delete me! :)  */
+
+.site-title {
+  font-family: 'Rock Salt', cursive;
+}
+/* color the jetpack social share buttons */
+
+.sd-social-icon .sd-content ul li a.sd-button, .sd-social-text .sd-content ul li a.sd-button, .sd-content ul li a.sd-button, .sd-content ul li .option a.share-ustom, .sd-content ul li.preview-item div.option.option-smart-off a, .sd-content ul li.advanced a.share-more, .sd-social-icon-text .sd-content ul li a.sd-button, .sd-social-official .sd-content>ul>li>a.sd-button, #sharing_email .sharing_send, .sd-social-official .sd-content>ul>li .digg_button >a {
+  background: rgb(240, 248, 255) !important;
+}
+header .container {
+  padding-bottom: 0;
+}
+.entry-content a {
+  font-weight:bold;
+}
+.sidebar {
+  font-size: 90%;
+}
+

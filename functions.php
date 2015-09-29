@@ -162,3 +162,10 @@ require get_template_directory() . '/includes/jetpack.php';
  * Load custom WordPress nav walker.
  */
 require get_template_directory() . '/includes/bootstrap-wp-navwalker.php';
+
+function sln_tk_load_google_fonts() {
+    wp_register_style('googleFonts','https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic|Rock+Salt');
+    wp_enqueue_style('googleFonts');
+}
+add_action('wp_print_styles', 'sln_tk_load_google_fonts');
+
