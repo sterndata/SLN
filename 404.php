@@ -20,6 +20,9 @@ get_header(); ?>
 
 			<?php get_search_form(); ?>
 
+    <p>Or try one of these links</p>
+<?php echo do_shortcode( '[sds-sitemap]'); ?>
+
 		</div><!-- .page-content -->
 
 	</section><!-- .content-padder -->
