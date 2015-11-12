@@ -212,6 +212,8 @@ display: block;
 
 .entry-meta {
 	clear: both;
+        margin-bottom: 1em;
+        font-size: 90%;
 }
 
 /*
