@@ -169,3 +169,5 @@ function sln_tk_load_google_fonts() {
 }
 add_action('wp_print_styles', 'sln_tk_load_google_fonts');
 
+// Allow photon on secure url.
+add_filter( 'jetpack_photon_reject_https', '__return_false' );
