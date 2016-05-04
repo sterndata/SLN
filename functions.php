@@ -8,64 +8,64 @@
 /**
  * Set the content width based on the theme's design and stylesheet.
  */
-if ( ! isset( $content_width ) )
-	$content_width = 750; /* pixels */
+if ( ! isset( $content_width ) ) {
+	$content_width = 750; } /* pixels */
 
 if ( ! function_exists( '_tk_setup' ) ) :
-/**
+	/**
  * Set up theme defaults and register support for various WordPress features.
  *
  * Note that this function is hooked into the after_setup_theme hook, which runs
  * before the init hook. The init hook is too late for some features, such as indicating
  * support post thumbnails.
  */
-function _tk_setup() {
-	global $cap, $content_width;
+	function _tk_setup() {
+		global $cap, $content_width;
 
-	// This theme styles the visual editor with editor-style.css to match the theme style.
-	add_editor_style();
+		// This theme styles the visual editor with editor-style.css to match the theme style.
+		add_editor_style();
 
-	/**
+		/**
 	 * Add default posts and comments RSS feed links to head
 	*/
-	add_theme_support( 'automatic-feed-links' );
+		add_theme_support( 'automatic-feed-links' );
 
-	/**
+		/**
 	 * Enable support for Post Thumbnails on posts and pages
 	 *
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	*/
-	add_theme_support( 'post-thumbnails' );
+		add_theme_support( 'post-thumbnails' );
 
-	/**
+		/**
 	 * Enable support for Post Formats
 	*/
-	add_theme_support( 'post-formats', array( 'aside', 'image', 'video', 'quote', 'link' ) );
+		add_theme_support( 'post-formats', array( 'aside', 'image', 'video', 'quote', 'link' ) );
 
-	/**
+		/**
 	 * Setup the WordPress core custom background feature.
 	*/
-	add_theme_support( 'custom-background', apply_filters( '_tk_custom_background_args', array(
-		'default-color' => 'ffffff',
-		'default-image' => '',
-	) ) );
-	
-	/**
+		add_theme_support( 'custom-background', apply_filters( '_tk_custom_background_args', array(
+			'default-color' => 'ffffff',
+			'default-image' => '',
+		) ) );
+
+		/**
 	 * Make theme available for translation
 	 * Translations can be filed in the /languages/ directory
 	 * If you're building a theme based on _tk, use a find and replace
 	 * to change '_tk' to the name of your theme in all the template files
 	*/
-	load_theme_textdomain( '_tk', get_template_directory() . '/languages' );
+		load_theme_textdomain( '_tk', get_template_directory() . '/languages' );
 
-	/**
+		/**
 	 * This theme uses wp_nav_menu() in one location.
 	*/
-	register_nav_menus( array(
-		'primary'  => __( 'Header bottom menu', '_tk' ),
-	) );
+		register_nav_menus( array(
+			'primary'  => __( 'Header bottom menu', '_tk' ),
+		) );
 
-}
+	}
 endif; // _tk_setup
 add_action( 'after_setup_theme', '_tk_setup' );
 
@@ -82,17 +82,17 @@ function _tk_widgets_init() {
 		'after_title'   => '</h3>',
 	) );
 
-        $args = array(
+		$args = array(
 		'id'            => 'footer',
 		'class'         => 'footer_sidebar',
 		'name'          => __( 'Footer', 'sln' ),
-                'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-                'after_widget'  => '</aside>',
-                'before_title'  => '<h3 class="widget-title">',
-                'after_title'   => '</h3>',
+				'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+				'after_widget'  => '</aside>',
+				'before_title'  => '<h3 class="widget-title">',
+				'after_title'   => '</h3>',
 
-	);
-	register_sidebar( $args );
+		);
+		register_sidebar( $args );
 
 }
 add_action( 'widgets_init', '_tk_widgets_init' );
@@ -115,10 +115,10 @@ function _tk_scripts() {
 	wp_enqueue_style( '_tk-style', get_stylesheet_uri() );
 
 	// load bootstrap js
-	wp_enqueue_script('_tk-bootstrapjs', get_template_directory_uri().'/includes/resources/bootstrap/js/bootstrap.min.js', array('jquery') );
+	wp_enqueue_script( '_tk-bootstrapjs', get_template_directory_uri().'/includes/resources/bootstrap/js/bootstrap.min.js', array( 'jquery' ) );
 
 	// load bootstrap wp js
-	wp_enqueue_script( '_tk-bootstrapwp', get_template_directory_uri() . '/includes/js/bootstrap-wp.js', array('jquery') );
+	wp_enqueue_script( '_tk-bootstrapwp', get_template_directory_uri() . '/includes/js/bootstrap-wp.js', array( 'jquery' ) );
 
 	wp_enqueue_script( '_tk-skip-link-focus-fix', get_template_directory_uri() . '/includes/js/skip-link-focus-fix.js', array(), '20130115', true );
 
@@ -164,10 +164,10 @@ require get_template_directory() . '/includes/jetpack.php';
 require get_template_directory() . '/includes/bootstrap-wp-navwalker.php';
 
 function sln_tk_load_google_fonts() {
-    wp_register_style('googleFonts','https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic|Rock+Salt');
-    wp_enqueue_style('googleFonts');
+	wp_register_style( 'googleFonts','https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic|Rock+Salt' );
+	wp_enqueue_style( 'googleFonts' );
 }
-add_action('wp_print_styles', 'sln_tk_load_google_fonts');
+add_action( 'wp_print_styles', 'sln_tk_load_google_fonts' );
 
 // Allow photon on secure url.
 add_filter( 'jetpack_photon_reject_https', '__return_false' );

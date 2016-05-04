@@ -35,12 +35,12 @@
 					<p class="lead"><?php bloginfo( 'description' ); ?></p>
 				</div>
 
-                                <?php $header_image = get_header_image();
-                                if ( ! empty( $header_image ) ) { ?>
-                                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-                                                <img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="">
-                                        </a>
-                                <?php } // end if ( ! empty( $header_image ) ) ?>
+								<?php $header_image = get_header_image();
+								if ( ! empty( $header_image ) ) { ?>
+										<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+												<img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="">
+										</a>
+								<?php } // end if ( ! empty( $header_image ) ) ?>
 
 			</div>
 		</div>
@@ -56,7 +56,7 @@
 					<div class="navbar-header">
 						<!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-							<span class="sr-only"><?php _e('Toggle navigation','_tk') ?> </span>
+							<span class="sr-only"><?php _e( 'Toggle navigation','_tk' ) ?> </span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
@@ -76,7 +76,7 @@
 							'menu_class' 		=> 'nav navbar-nav',
 							'fallback_cb' 		=> 'wp_bootstrap_navwalker::fallback',
 							'menu_id'			=> 'main-menu',
-							'walker' 			=> new wp_bootstrap_navwalker()
+							'walker' 			=> new wp_bootstrap_navwalker(),
 						)
 					); ?>
 
