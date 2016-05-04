@@ -92,6 +92,7 @@ img[class*="wp-image-"] {
 .wp-caption .wp-caption-text {
 	text-align: center;
 	margin-top: 10px;
+    font-size: 80%;
 }
 
 /* WP Gallery */
