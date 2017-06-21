@@ -273,7 +273,8 @@ display: block;
 header .container {
   padding-bottom: 0;
 }
-.entry-content a {
+.entry-content a,
+.sidebar a {
   font-weight:bold;
 }
 .sidebar {
