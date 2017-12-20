@@ -266,6 +266,9 @@ display: block;
   font-family: 'Lobster', cursive;
   font-size: 48px;
 }
+h1,h2,h3,h4 {
+  font-family: 'Lobster', cursive;
+}
 /* color the jetpack social share buttons */
 
 .sd-social-icon .sd-content ul li a.sd-button, .sd-social-text .sd-content ul li a.sd-button, .sd-content ul li a.sd-button, .sd-content ul li .option a.share-ustom, .sd-content ul li.preview-item div.option.option-smart-off a, .sd-content ul li.advanced a.share-more, .sd-social-icon-text .sd-content ul li a.sd-button, .sd-social-official .sd-content>ul>li>a.sd-button, #sharing_email .sharing_send, .sd-social-official .sd-content>ul>li .digg_button >a {
