@@ -165,7 +165,7 @@ require get_template_directory() . '/includes/jetpack.php';
 require get_template_directory() . '/includes/bootstrap-wp-navwalker.php';
 
 function sln_tk_load_google_fonts() {
-	wp_register_style( 'googleFonts','https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic|Lobster' );
+	wp_register_style( 'googleFonts','https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,Noto+Serif:400,400i,700,700i' );
 	wp_enqueue_style( 'googleFonts' );
 }
 add_action( 'wp_print_styles', 'sln_tk_load_google_fonts' );

@@ -263,11 +263,11 @@ display: block;
 /* Hey, if you don't need my comments anymore, just delete me! :)  */
 
 .site-title {
-  font-family: 'Lobster', cursive;
+  font-family: 'Noto Serif', cursive;
   font-size: 48px;
 }
 h1,h2 {
-  font-family: 'Lobster', cursive;
+  font-family: 'Noto Serif', cursive;
 }
 /* color the jetpack social share buttons */
 
