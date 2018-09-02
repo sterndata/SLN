@@ -321,4 +321,11 @@ header .container {
 blockquote {
    font-size: 90%;
 }
-
+@media (min-width: 992px) {
+  .page-template-nosidebar-page .col-md-8 {
+     width: 100%;
+   }
+}
+#crm-container.crm-public .label, #crm-container.crm-public .price-field-amount {
+    color: #000;
+}
