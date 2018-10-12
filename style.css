@@ -262,6 +262,10 @@ display: block;
 
 /* Hey, if you don't need my comments anymore, just delete me! :)  */
 
+hr {
+  border-top: 1px solid #444;
+}
+
 .site-title {
   font-family: 'Noto Serif', cursive;
   font-size: 48px;
@@ -339,3 +343,4 @@ div.crm-container label {
     text-align: left;
     white-space: normal;
 }
+
