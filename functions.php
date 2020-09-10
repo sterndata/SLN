@@ -165,8 +165,10 @@ require get_template_directory() . '/includes/jetpack.php';
 require get_template_directory() . '/includes/bootstrap-wp-navwalker.php';
 
 function sln_tk_load_google_fonts() {
-	wp_register_style( 'googleFonts','https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,Noto+Serif:400,400i,700,700i' );
-	wp_enqueue_style( 'googleFonts' );
+	wp_register_style( 'googleFonts1','https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,Noto+Serif:ital,wght@0,400;0,700;1,400' );
+	wp_register_style( 'googleFonts2','https://fonts.googleapis.com/css?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700' );
+	wp_enqueue_style( 'googleFonts1' );
+	wp_enqueue_style( 'googleFonts2' );
 }
 add_action( 'wp_print_styles', 'sln_tk_load_google_fonts' );
 
