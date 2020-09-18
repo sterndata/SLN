@@ -343,4 +343,9 @@ div.crm-container label {
     text-align: left;
     white-space: normal;
 }
-
+figcaption {
+    font-size: 80%;
+    color: #999;
+    font-style: italic;
+    font-family: serif;
+}
