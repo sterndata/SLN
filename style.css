@@ -345,7 +345,8 @@ div.crm-container label {
 }
 figcaption {
     font-size: 80%;
-    color: #999;
+    color: #555;
     font-style: italic;
     font-family: serif;
+    text-align: center;
 }
