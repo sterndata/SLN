@@ -283,7 +283,8 @@ header .container {
 }
 .entry-content a,
 .sidebar a {
-  font-weight:bold;
+  font-weight:normal;
+  text-decoration:underline;
 }
 .sidebar {
   font-size: 90%;
